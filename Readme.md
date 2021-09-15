@@ -2,7 +2,7 @@
 
 Task organizer modeled after the Todo list UI.
 
-Link to [Live]()
+Link to [Live](https://hvanotten.github.io/Todo-List/)
 
 ## Instructions
 Main Panel
