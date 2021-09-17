@@ -189,6 +189,7 @@ main {
     margin-top: 5px;
 }
 .input-search, .form-task input, .form-task select, .form-project input {
+
     border: none;
     outline: none;
     padding: .3rem;
@@ -223,6 +224,7 @@ main {
 }
 
 .form-task input {
+
     padding: .5rem;
     flex: 1;
     border-bottom: 1px solid #222;
@@ -261,12 +263,15 @@ main {
     margin-right: auto;
 }
 
+
+
 /*form project*/
 
 .form-project {
     display: flex;
     flex-wrap: wrap;
     padding: .5rem;
+    
 }
 
 .form-project input {
@@ -275,7 +280,7 @@ main {
     margin-bottom: .5rem;
     border-bottom: thin solid #222;
     border-radius: 5px;
-    color: var(--color5);
+    color: var(--color6);
 }
 .form-project input:focus {
     background-color: var(--color5);
