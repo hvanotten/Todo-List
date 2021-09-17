@@ -9,25 +9,22 @@
     --color6: #443349;
     --font-family: 'Oxygen', sans-serif;
     --font-family-text: 'Roboto', sans-serif;
-    --font-size-sm: 12px;
-    --font-size-md: 30px;
-    --font-size-lg: 80px;
+    --font-size-sm: 10px;
+    --font-size-md: 25px;
+    --font-size-lg: 60px;
 }
 
-*,
-*::after,
-*::before {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
     /* border: 2px solid #f000ff; */
 }
 
 html {
-    /* font-size: var(--font-size-md); */
     font-family: var(--font-family-text);
     font-weight: bolder;
+    font-size: 10px;
     overflow-x: hidden;
 }
 
@@ -42,12 +39,14 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
 }
+
+
+/* header */
 
 .header {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--color6);
     color: var(--color5);
     display: flex;
@@ -55,6 +54,7 @@ button {
     align-items: flex-start;
     top: 0;
     left: 0;
+    position: fixed;
 }
 
 .logo {
@@ -65,9 +65,6 @@ button {
 .nav {
     display: flex;
     width: 100%;
-    padding: 10px;
-    align-items: left;
-	font-size: 14px;
 }
 
 .btn {
@@ -76,7 +73,7 @@ button {
     cursor: pointer;
     border: none;
     outline: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .header i, .fas {
@@ -96,16 +93,17 @@ main {
 .menu {
     display: flex;
     flex-direction: column;
+    width: 30rem;
+    position: fixed;
     background-color: var(--color6);
     height: 100%;
-    width: 30rem;
+    overflow: auto;
     top: 75px;
     left: 0;
     padding: 3rem 3.5rem 0 3.5rem;
     z-index: 1;
     transform: translateX(0);
     transition: transform .3s ease;
-    float: left;
 }
 
 .menu .btn {
@@ -131,11 +129,11 @@ main {
 }
 
 .task-container {
-    float: left;
+    margin-top: 150px;
+    padding: 2rem;
     width: calc(100% - 30rem);
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     transition: all .3s ease;
@@ -580,6 +578,28 @@ footer {
 
 @media screen and (max-width: 768px) {
     .info {
+        display: none;
+    }
+    #title {
+        flex-grow: 2;
+    }
+}
+@media screen and (max-width: 700px) {
+ .info {
+        display: none;
+    }
+    #title {
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    text-align: center;
+    float: none;
+    height: 100%;
+  }
+  .info {
         display: none;
     }
     #title {
