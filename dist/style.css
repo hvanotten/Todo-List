@@ -599,9 +599,7 @@ footer {
     float: none;
     height: 100%;
   }
-  .info {
-        display: none;
-    }
+
     #title {
         flex-grow: 2;
     }
